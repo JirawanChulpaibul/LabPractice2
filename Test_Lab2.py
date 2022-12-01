@@ -11,3 +11,9 @@ def test_temp_median():
     test = 3.0
     result = temp.calc_median_temperature(inp)
     assert (result == test)
+
+def test_temp_min_min():
+    inp = [2.0, 3.0, 4.0, 5.0]
+    test = [2.0, 5.0]
+    result = temp.find_min_max(inp)
+    assert (result==test)
